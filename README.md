@@ -36,11 +36,41 @@ Phase 2 - Core Service Development
 
 ```text
 src/
-controllers/
-services/
-routes/
-models/
-middleware/
+├── controllers/
+├── services/
+├── routes/
+├── models/
+├── middleware/
+├── validations/
+├── database/
+└── app.js
+```
+
+## Implemented Features
+
+- Create Appointment API
+- Update Appointment API
+- Cancel Appointment API
+- Authentication Middleware
+- Request Validation
+- API Route Structure
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|--------|-----------|-------------|
+| POST | /api/appointments | Create appointment |
+| PUT | /api/appointments/:id | Update appointment |
+| DELETE | /api/appointments/:id | Cancel appointment |
+
+## Authentication
+
+Protected APIs require Authorization header.
+
+Example:
+
+```text
+Authorization: testtoken
 ```
 
 ## Run Project
